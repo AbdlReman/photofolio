@@ -1,0 +1,29 @@
+.left,.right{
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    transition: all 1s;
+    /* z-index: -1; */
+}
+
+
+.left{
+    background: rgb(34, 28, 28);
+}
+.right{
+    background: rgb(34, 28, 28);
+    right: 0;
+}
+
+.line{
+    transition: all 1.5s;
+    width: 2px;
+    height: 1px;
+    background: white;
+    z-index: 222;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

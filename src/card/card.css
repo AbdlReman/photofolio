@@ -1,0 +1,48 @@
+.crd{
+    position: relative;
+}
+
+
+.underlay img{
+    transition: all 0.2s;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    overflow: hidden;
+    opacity: 0;
+    bottom: 0;
+    transition: all 0.2s;;
+}
+
+.crd{
+    overflow: hidden;
+    background: transparent;
+}
+
+
+.crd:hover .overlay{
+    /* height: 100% !important; */
+    opacity: 1;
+    /* width: 500px; */
+}
+
+.crd:hover .underlay img{
+    scale: 1.2;
+}
+
+.img-icons{
+    transition: all 0.3s;
+}
+
+.crd:hover .img-icons{
+    transform: translateY(-10px);
+}
